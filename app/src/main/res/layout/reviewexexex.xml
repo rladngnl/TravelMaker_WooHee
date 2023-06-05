@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <!--프로필-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/oval" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/line" />
+        
+    </FrameLayout>
+    
+    
+    
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/map"
+        android:text="일본 _ 도쿄 \nJapan _ Tokyo"
+        android:drawablePadding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/applesdgothicneo"
+        android:textSize="15dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="330dp"
+        android:layout_height="370dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+    
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리뷰ㅜ내용"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/applesdgothicneo"
+        android:textSize="15dp"/>
+</LinearLayout>

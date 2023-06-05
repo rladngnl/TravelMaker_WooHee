@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <!--프로필-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/oval" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/line" />
+
+    </FrameLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+
+            <!-- 여행지 입력창 -->
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:drawableStart="@drawable/map"
+            android:hint="여행지를 입력해주세요"
+            android:fontFamily="@font/font"/>
+
+        <!-- 항공편 입력창-->
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:drawableStart="@drawable/u_plane_fly"
+            android:hint="항공편을 적어주세요"
+            android:fontFamily="@font/font"/>
+
+        <!-- 사진 입력 -->
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/menu_empty"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <!-- 내용 입력-->
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="내용을 입력해주세요"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/applesdgothicneo"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp">
+
+                <android.widget.Button
+                    android:id="@+id/upreview_cancel"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:fontFamily="@font/applesdgothicneo"
+                    android:background="@drawable/menu_empty"
+                    android:text="취소"
+                    />
+
+
+                <android.widget.Button
+                    android:id="@+id/upreview_commit"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/button_res_rounded_color_main"
+                    android:text="공유"
+                    android:fontFamily="@font/applesdgothicneo"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>
