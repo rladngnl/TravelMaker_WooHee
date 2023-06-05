@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="top"
+        android:scaleType="fitXY"
+        android:src="@drawable/osaka"
+        android:id="@+id/osaka_overlay" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/osaka_overlay">
+
+        <android.widget.Button
+            android:id="@+id/osaka_info1_btn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@color/main"
+            android:onClick="onClicked"
+            android:layout_weight="1"
+            android:text="정보"
+            android:fontFamily="@font/applesdgothicneo"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <android.widget.Button
+            android:id="@+id/osaka_info2_btn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@color/main"
+            android:onClick="onClicked"
+            android:layout_toRightOf="@+id/osaka_info"
+            android:layout_weight="1"
+            android:text="관광"
+            android:fontFamily="@font/applesdgothicneo"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <android.widget.Button
+            android:id="@+id/osaka_info3_btn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@color/main"
+            android:onClick="onClicked"
+            android:layout_toRightOf="@+id/osaka_info2"
+            android:layout_weight="1"
+            android:text="식당"
+            android:fontFamily="@font/applesdgothicneo"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:text=" 오사카 5월 날씨 \n \n 덥고 습한 장마의 시작, \n 시원한 옷차림이 좋아요."
+            android:fontFamily="@font/applesdgothicneo"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rain_icon"
+            android:layout_toRightOf="@+id/weather"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오사카 특가 항공권 "
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/applesdgothicneo"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/u_plane_fly"
+            android:id="@+id/plane_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/plane_icon"
+            android:text="가격정보 \n \n항공권 보러가기"
+            android:fontFamily="@font/applesdgothicneo"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="15dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/menu_logo" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:text="설정"
+
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/fi_settings"
+        android:drawablePadding="20dp"
+         android:gravity="center_vertical|start"
+        android:fontFamily="@font/applesdgothicneo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:background="#00000000"
+
+        android:text="고객센터"
+        android:drawableLeft="@drawable/fi_smile"
+        android:drawablePadding="20dp"
+        android:textColor="@color/black"
+         android:gravity="center_vertical|start"
+        android:fontFamily="@font/applesdgothicneo"
+
+
+    />
+
+    <Button
+        android:drawablePadding="20dp"
+        android:id="@+id/menu_to_myreview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:background="#00000000"
+        android:text="마이페이지"
+        android:drawableLeft="@drawable/fi_user"
+        android:textColor="@color/black"
+         android:gravity="center_vertical|start"
+        android:fontFamily="@font/applesdgothicneo"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/menu_empty" />
+
+
+    <Button
+        android:drawablePadding="20dp"
+        android:id="@+id/menu_to_upreview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:background="#00000000"
+        android:fontFamily="@font/applesdgothicneo"
+        android:text="여행 리뷰 쓰러가기 "
+        android:drawableLeft="@drawable/fi_layers"
+        android:textColor="@color/black"
+         android:gravity="center_vertical|start"/>
+
+
+    <Button
+        android:drawablePadding="20dp"
+        android:id="@+id/menu_to_review"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:background="#00000000"
+        android:fontFamily="@font/applesdgothicneo"
+        android:text="여행 리뷰 보러가기 "
+        android:drawableLeft="@drawable/fi_eye"
+        android:textColor="@color/black"
+         android:gravity="center_vertical|start"/>
+
+    <Button
+        android:drawablePadding="20dp"
+        android:id="@+id/menu_to_besttrip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:background="#00000000"
+        android:fontFamily="@font/applesdgothicneo"
+        android:text="여행지 추천 받기 "
+        android:drawableLeft="@drawable/fi_thumbs_up"
+        android:textColor="@color/black"
+         android:gravity="center_vertical|start"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/menu_empty" />
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
